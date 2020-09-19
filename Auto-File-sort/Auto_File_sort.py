@@ -5,7 +5,6 @@ import os
 import json
 
 class MyHandler(FileSystemEventHandler):
-        i = 1
         def on_modified(self,event):
             for filename in os.listdir(folder_to_track):
                 name, extension = os.path.splitext(filename)
